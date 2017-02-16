@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 public class Startup
 {
@@ -8,6 +9,18 @@ public class Startup
 	{
 		app.UseDefaultFiles();
 		app.UseStaticFiles();
+        app.UseMvc(routes =>
+        {
+            routes.MapRoute(
+                name: "default",
+                template: "{controller=Values}/{action=Index}/{id?}");
+        });
+    }
+
+    public void ConfigureServices(IServiceCollection services)
+    {
+        // Add framework services.
+        services.AddMvc();
     }
 
     public static void Main(string[] args)
@@ -19,6 +32,7 @@ public class Startup
         var host = new WebHostBuilder()
                     .UseKestrel()
                     .UseConfiguration(config)
+                    .UseIISIntegration()
                     .UseStartup<Startup>()
                     .Build();
         host.Run();
