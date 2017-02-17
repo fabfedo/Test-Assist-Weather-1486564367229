@@ -167,4 +167,5 @@
 --reference:C:\Users\Fabrice\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 --resource:"D:\Projects\IBM\TestAssistWeather\src\dotnetstarter\obj\Debug\netcoreapp1.0\dotnetstarterdotnet-compile.deps.json",dotnetstarter.deps.json
 D:\Projects\IBM\TestAssistWeather\src\dotnetstarter\Startup.cs
-D:\Projects\IBM\TestAssistWeather\src\dotnetstarter\Controllers\ValuesController.cs
+D:\Projects\IBM\TestAssistWeather\src\dotnetstarter\WeatherService.cs
+D:\Projects\IBM\TestAssistWeather\src\dotnetstarter\Controllers\WeatherController.cs

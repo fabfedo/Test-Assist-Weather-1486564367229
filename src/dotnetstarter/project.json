@@ -1,18 +1,12 @@
 {
-    "buildOptions": {
-        "copyToOutput": {
-        "include": [ "wwwroot","Controllers" ]
-        },
-        "debugType": "portable",
-        "emitEntryPoint": true,
-        "preserveCompilationContext": true
+  "buildOptions": {
+    "copyToOutput": {
+      "include": [ "wwwroot", "Controllers" ]
     },
-
-    "publishOptions": {
-        "include": [ "wwwroot","Controllers" ],
-        "exclude": [ "**.user", "**.vspscc" ]
-    },
-
+    "debugType": "portable",
+    "emitEntryPoint": true,
+    "preserveCompilationContext": true
+  },
   "dependencies": {
     "Microsoft.AspNetCore.Mvc": "1.0.1",
     "Microsoft.AspNetCore.Mvc.Core": "1.0.1",
@@ -26,16 +20,17 @@
       "version": "1.0.1"
     }
   },
-
-    "frameworks": {
-        "netcoreapp1.0": {
-            "imports": [
-                "portable-net45+wp80+win8+wpa81+dnxcore50"
-            ]
-        }
-    },
-
-    "scripts": { },
-
-    "version": "1.0.1"
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": [
+        "portable-net45+wp80+win8+wpa81+dnxcore50"
+      ]
+    }
+  },
+  "publishOptions": {
+    "include": [ "wwwroot", "Controllers" ],
+    "exclude": [ "**.user", "**.vspscc" ]
+  },
+  "scripts": {},
+  "version": "1.0.1"
 }
